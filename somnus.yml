@@ -1,0 +1,11 @@
+docker:
+  # Defaults specifying the values to be used against Docker registry when checking for latest images
+  defaults:
+    registry: 'hub.docker.com'
+    version: 'v2'
+    namespace: 'library'
+    tag: 'latest'
+  # https://github.com/apocas/dockerode#getting-started
+  # docker.config is passed directly to instantiate Docker object
+  config:
+    socketPath: '/var/run/docker.sock'

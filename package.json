@@ -1,0 +1,35 @@
+{
+  "dependencies": {
+    "axios": "^0.19.2",
+    "commander": "^4.1.1",
+    "docker-parse-image": "^3.0.1",
+    "dockerode": "^3.1.0",
+    "js-yaml": "^3.13.1",
+    "lodash-fp": "^0.10.4",
+    "node-jq": "^1.11.0",
+    "semver": "^7.1.3",
+    "winston": "^3.2.1",
+    "winston-daily-rotate-file": "^4.4.2"
+  },
+  "name": "somnus",
+  "description": "A NodeJS based script to update services in a Docker stack to their latest image tags.",
+  "version": "1.0.0",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "none"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://amni.co/git/visitsb/somnus.git"
+  },
+  "keywords": [
+    "docker",
+    "images",
+    "update",
+    "latest",
+    "auto"
+  ],
+  "author": "Shanti Naik <visitsb@gmail.com>",
+  "license": "MIT"
+}
