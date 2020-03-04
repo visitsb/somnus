@@ -1,11 +1,26 @@
 docker:
-  # Defaults specifying the values to be used against Docker registry when checking for latest images
-  defaults:
+  defaults: # Defaults specifying the values to be used against Docker registry when checking for latest images
     registry: 'hub.docker.com'
     version: 'v2'
     namespace: 'library'
+    # [Optional] Add a docker label to your service labels - "somnus.defaults.latest.tag=alpine" to restrict choice of image
+    # to -alpine tags e.g. -slim, -stretch, -bionic etc.
+    # You can also use a specific major version in the tag such as '5' in the tag to
+    # keep your versions only to the 5x tags for that image.
+    # Otherwise, the default `latest` tag will be used
     tag: 'latest'
-  # https://github.com/apocas/dockerode#getting-started
-  # docker.config is passed directly to instantiate Docker object
-  config:
+  config: # Docker configuration to connect to Docker engine
+    # Can be specified as either
+    #   socketPath: '/var/run/docker.sock'
+    # -or-
+    #   protocol:'http'
+    #   host: '127.0.0.1'
+    #   port: 3000
+    # -or-
+    #   host: 'http://192.168.1.10'
+    #   port: 3000
+    # -or-
+    #   host: '127.0.0.1'
+    #   port: 3000
+    # protocol defaults to `http`
     socketPath: '/var/run/docker.sock'
