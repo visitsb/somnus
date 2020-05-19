@@ -3,10 +3,11 @@
     "axios": "^0.19.2",
     "commander": "^4.1.1",
     "docker-parse-image": "^3.0.1",
-    "dockerode": "^3.1.0",
+    "dockerode": "^3.2.0",
     "js-yaml": "^3.13.1",
+    "leven": "^3.1.0",
     "lodash-fp": "^0.10.4",
-    "node-jq": "^1.11.0",
+    "node-jq": "^1.11.1",
     "string-similarity": "^4.0.1",
     "winston": "^3.2.1",
     "winston-daily-rotate-file": "^4.4.2"
