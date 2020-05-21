@@ -1,14 +1,18 @@
 docker:
   defaults: # Defaults specifying the values to be used against Docker registry when checking for latest images
+    # All of the values below can be specified at your service to override any default values
+    # Use label `somnus.defaults.<key>=<value>` for your service to override below defaults.
     registry: 'hub.docker.com'
     version: 'v2'
     namespace: 'library'
+    architecture: 'amd64'
+    os: 'linux'
     # [Optional] Add a docker label to your service labels - "somnus.defaults.latest.tag=alpine" to restrict choice of image
     # to -alpine tags e.g. -slim, -stretch, -bionic etc.
     # You can also use a specific major version in the tag such as '5' in the tag to
     # keep your versions only to the 5x tags for that image.
     # Otherwise, the default `latest` tag will be used
-    tag: 'latest'
+    latest: 'latest'
   config: # Docker configuration to connect to Docker engine
     # Can be specified as either
     #   socketPath: '/var/run/docker.sock'
