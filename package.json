@@ -14,7 +14,7 @@
     "winston-daily-rotate-file": "^4.4.2"
   },
   "name": "somnus",
-  "description": "A NodeJS based script to update services in a Docker stack to their latest image tags.",
+  "description": "A NodeJs based docker image to keep services in a Docker stack always up-to-date to their latest images.",
   "version": "1.0.0",
   "main": "app.js",
   "devDependencies": {},
