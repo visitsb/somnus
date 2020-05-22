@@ -2,6 +2,7 @@
   "dependencies": {
     "axios": "^0.19.2",
     "commander": "^4.1.1",
+    "cron": "^1.8.2",
     "docker-parse-image": "^3.0.1",
     "dockerode": "^3.2.0",
     "js-yaml": "^3.13.1",
@@ -18,7 +19,7 @@
   "main": "app.js",
   "devDependencies": {},
   "scripts": {
-    "test": "none"
+    "start": "node app.js --config ./somnus.yml"
   },
   "repository": {
     "type": "git",

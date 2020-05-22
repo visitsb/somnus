@@ -28,3 +28,30 @@ docker:
     #   port: 3000
     # protocol defaults to `http`
     socketPath: '/var/run/docker.sock'
+  autoupdate:
+    log:
+      # Level of log information to output; can be one of below levels
+      # Higher up the list, less log information is logged.
+      # Lower in the list, more log information is logged.
+      #
+      # error
+      # warn
+      # info
+      # http
+      # verbose
+      # debug
+      # silly
+      level: 'verbose'
+    # Cron schedule to specify how often the checks for updates are done
+    # ┌────────────── Seconds: 0-59
+    # │ ┌──────────── Minutes: 0-59
+    # │ │ ┌────────── Hours: 0-23
+    # │ │ │ ┌──────── Day of Month: 1-31
+    # │ │ │ │ ┌────── Months: 0-11 (Jan-Dec)
+    # │ │ │ │ │ ┌──── Day of Week: 0-6 (Sun-Sat)
+    # │ │ │ │ │ │
+    # │ │ │ │ │ │
+    # * * * * * *
+    # * for any of the above means all values are valid
+    # Default is to check for updates once daily at midnight
+    schedule: '00 00 00 * * *'
