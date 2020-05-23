@@ -1,4 +1,4 @@
-FROM node:14.3.0-stretch-slim
+FROM node:stretch
 LABEL maintainer="Shanti Naik <visitsb@gmail.com>"
 
 ADD . /app/
