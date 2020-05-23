@@ -24,7 +24,7 @@ Somnus uses [Dockerode](https://github.com/apocas/dockerode) under the covers. D
     `somnus.yml` contains default settings to use Docker hub as well as `socketPath` to connect to your running Docker engine can be specified there. Please use the sample `somnus.yml` available in the project repo.
     
     Somnus currently supports the below parameters
-    ```js
+    ```shell script
     Options:
     -v, --version              output the current version
     -c, --config <config.yml>  path to somnus.yml config
@@ -74,13 +74,19 @@ Note: You only need to define `somnus` once in one of your Docker stacks, perhap
        - ...
     environment:
       - ...
-  # Declare Somnus like any other service in your stack
+  # Declare Somnus like any other service in your stack. Since just one global service is sufficient
+  # you can specify the service placement to be `global` and restricted to a `manager` node.
   somnus:
         image: visitsb/somnus:1.0
         volumes:
            - /var/run/docker.sock:/var/run/docker.sock:ro
            - /somnus/somnus.yml:/app/somnus.yml:ro
            - /somnus/logs:/app/logs:rw
+        deploy:
+          mode: global
+          placement:
+          constraints:
+            - node.role == manager
         ... 
 ```
 
