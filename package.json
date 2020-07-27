@@ -7,6 +7,7 @@
     "dockerode": "^3.2.1",
     "js-yaml": "^3.14.0",
     "leven": "^3.1.0",
+    "lodash": "^4.17.19",
     "lodash-fp": "^0.10.4",
     "node-jq": "^1.11.1",
     "string-similarity": "^4.0.1",
