@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "commander": "^6.0.0",
     "cron": "^1.8.2",
     "docker-parse-image": "^3.0.1",
