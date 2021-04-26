@@ -1,22 +1,22 @@
 {
   "dependencies": {
-    "axios": "^0.19.2",
-    "commander": "^6.0.0",
+    "axios": "^0.21.1",
+    "commander": "^7.2.0",
     "cron": "^1.8.2",
     "docker-parse-image": "^3.0.1",
-    "dockerode": "^3.2.1",
-    "js-yaml": "^3.14.0",
+    "dockerode": "^3.3.0",
+    "js-yaml": "^4.1.0",
     "leven": "^3.1.0",
-    "lodash": "^4.17.19",
+    "lodash": "^4.17.21",
     "lodash-fp": "^0.10.4",
-    "node-jq": "^1.11.1",
-    "string-similarity": "^4.0.1",
+    "node-jq": "^1.12.0",
+    "string-similarity": "^4.0.4",
     "winston": "^3.3.3",
-    "winston-daily-rotate-file": "^4.5.0"
+    "winston-daily-rotate-file": "^4.5.2"
   },
   "name": "somnus",
   "description": "A NodeJs based docker image to keep services in a Docker stack always up-to-date to their latest images.",
-  "version": "2.1",
+  "version": "2.3",
   "main": "app.js",
   "devDependencies": {},
   "scripts": {
