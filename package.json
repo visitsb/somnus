@@ -16,7 +16,7 @@
   },
   "name": "somnus",
   "description": "A NodeJs based docker image to keep services in a Docker stack always up-to-date to their latest images.",
-  "version": "2.3",
+  "version": "2.4",
   "main": "app.js",
   "devDependencies": {},
   "scripts": {
